@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="prefetch" href="./images/Bkg-desktop.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="zoomed.css">
+    <title>Al Ain Plus - Al Ain Water</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div id="bottle-wrapper">
+            <!-- Think Text -->
+            <div class="out-of-zoom" id="think">
+                <h1><span>THINK</span><br>IMMUNITY,<br><span>THINK</span><br>AL AIN<br>PLUS.</h1>
+                <img id="zinc" src="./images/ZINC.png" alt="Fortified With Zinc statement written in blue gradient">
+            </div>
+            <!-- Al Ain Logo -->
+            <img class="out-of-zoom" id="alAinLogo" src="./images/PLUS LOGO.png"
+                alt="AlAin Bottled Drinking Water logo with the Al Ain Plus logo beneath it">
+            <!-- NEW box -->
+            <div class="out-of-zoom" id="new">NEW</div>
+            <!-- Background with bottle -->
+            <img draggable="false" id="bkg-bottle" src="./images/Bkg-desktop.jpg"
+                alt="an Al Ain Plus water bottle in a foggy room with stage lights">
+            <!-- Link Buttons -->
+            <button onclick="buttonClick(1)" class="buttons" id="comp-btn">COMPETITION</button>
+            <button onclick="buttonClick(2)" class="buttons" id="offer-btn">OFFER</button>
+            <button onclick="buttonClick(3)" class="buttons" id="benefits-btn">BENEFITS</button>
+        </div>
+        <!-- Competition Zoomed in Content -->
+        <div class="content" id="comp-content">
+            <h2>COMPETITION</h2>
+            <h3>Visit our Instagram page, participate in the competition on the feed, and win worthwhile prizes!</h3>
+            <button class="link-btn">CLICK HERE</button>
+        </div>
+        <!-- Offer Zoomed in Content -->
+        <div class="content" id="offer-content">
+            <h2>OFFER</h2>
+            <h3>We want everyone to get their hands on the spectacular PLUS bottle. Order through this link and get an
+                offer.</h3>
+            <button class="link-btn">CLICK HERE</button>
+        </div>
+        <!-- Benefits Zoomed in Content -->
+        <div class="content" id="benefits-content">
+            <h2>BENEFITS</h2>
+            <h3>Here’s a fun, interactive PLUS filter for you to try out on TikTok. Get creative and share the results
+                with us!</h3>
+            <button class="link-btn">CLICK HERE</button>
+        </div>
+        <!-- Back Button -->
+        <button id="back" onclick="goBack()">
+            <svg style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                    d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
+                    fill="white"></path>
+            </svg>
+        </button>
+    </main>
+    <footer></footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>

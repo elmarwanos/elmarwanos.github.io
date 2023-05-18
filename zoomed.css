@@ -1,0 +1,90 @@
+/* GLOBAL */
+.link-btn {
+    position: relative;
+    border: 1px solid white;
+    background: linear-gradient(to right, white 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    font-size: 1.5vw;
+    padding: 1vw;
+    border-radius: 5vw;
+    -webkit-border-radius: 5vw;
+    -moz-border-radius: 5vw;
+    -ms-border-radius: 5vw;
+    -o-border-radius: 5vw;
+    transition: background-position 0.3s linear, color 0.4s linear;
+    -webkit-transition: background-position 0.3s linear, color 0.4s linear;
+    -moz-transition: background-position 0.3s linear, color 0.4s linear;
+    -ms-transition: background-position 0.3s linear, color 0.4s linear;
+    -o-transition: background-position 0.3s linear, color 0.4s linear;
+}
+
+.link-btn:hover {
+    background-position: left;
+    color: black;
+}
+
+/* Content */
+.content {
+    display: none;
+    animation: appear 1s linear;
+    -webkit-animation: appear 1s linear;
+    position: fixed;
+    top: 10vh;
+    left: 25vw;
+    width: 50%;
+}
+
+/* Title */
+.content>h2 {
+    font-size: 5vw;
+    margin-bottom: clamp(30px, 5vmin, 50px);
+    letter-spacing: 2px;
+}
+
+/* Parargragefa */
+.content>h3 {
+    font-size: 1.8vw;
+    margin-bottom: clamp(30px, 5vmin, 50px);
+    line-height: 3vw;
+    letter-spacing: 0.1vw;
+    font-family: Cunia;
+}
+
+/* Button */
+.content>button {
+    width: fit-content;
+    font-family: Cunia;
+    font-size: 1.3vw;
+}
+
+/* Content SECTION */
+.content {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ANIMATIONS */
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-20%);
+        -webkit-transform: translateY(-20%);
+        -moz-transform: translateY(-20%);
+        -ms-transform: translateY(-20%);
+        -o-transform: translateY(-20%);
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+    }
+}
