@@ -55,19 +55,26 @@ button:hover {
 #back {
   position: fixed;
   top: 10vh;
-  left: 3vw;
+  left: 0vw;
   background: none;
   border: none;
   height: fit-content;
-  width: 5vw;
+  width: 100px;
   display: none;
   transition: display 0.5s linear;
   -webkit-transition: display 0.5s linear;
   -moz-transition: display 0.5s linear;
   -ms-transition: display 0.5s linear;
   -o-transition: display 0.5s linear;
-  animation: appear 0.5s linear;
-  -webkit-animation: appear 0.5s linear;
+  animation: appearLeft 0.8s linear;
+  -webkit-animation: appearLeft 0.8s linear;
+  border-radius: 0px 10px 10px 0px;
+  padding: 10px 20px 10px 25px;
+  background: linear-gradient(to top right, #544092 5%, #14a9e2 50%, #6dc2b4 100%);
+  -webkit-border-radius: 0px 10px 10px 0px;
+  -moz-border-radius: 0px 10px 10px 0px;
+  -ms-border-radius: 0px 10px 10px 0px;
+  -o-border-radius: 0px 10px 10px 0px;
 }
 
 .out-of-zoom {
@@ -93,7 +100,7 @@ button:hover {
   -ms-transition: padding 0.3s ease 0s, transform 1s cubic-bezier(0, -0.01, .17, .89) 0s, opacity 0.3s linear;
   -o-transition: padding 0.3s ease 0s, transform 1s cubic-bezier(0, -0.01, .17, .89) 0s, opacity 0.3s linear;
   font-size: 4vw;
-  text-shadow: 0.4vw 0.4vw 0px black;
+  text-shadow: 0.4vw 0.4vw 5px rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
   /* font-family: Cunia; */
 }
@@ -148,7 +155,7 @@ button:hover {
   top: 2vmin;
   margin-top: 45px;
   left: 30px;
-  background: linear-gradient(to top left, #544092 5%, #14a9e2 50%, #6dc2b4 100%);
+  background: linear-gradient(to top right, #544092 5%, #14a9e2 50%, #6dc2b4 100%);
   text-align: center;
   font-size: 4vh;
   padding: 2px 20px;
@@ -191,11 +198,26 @@ button:hover {
 }
 
 #zinc {
-  width: 50%;
+  width: 70%;
 }
 
 /* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------- Mobile Version -------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 1000px) {
   #comp-btn {
@@ -228,7 +250,7 @@ button:hover {
   }
 
   #think {
-    top: clamp(15vh, 20vh ,20vh);
+    top: 14vh;
     left: 50%;
     text-align: center;
     width: 100%;
@@ -258,5 +280,10 @@ button:hover {
     left: calc(50% - 49vw);
     top: calc(50% + 40vw);
     width: 33vw;
+  }
+
+  #back {
+    width: 50px;
+    padding: 6px 10px 4px 15px;
   }
 }

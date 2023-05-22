@@ -2,8 +2,8 @@
 .link-btn {
     position: relative;
     border: 1px solid white;
-    background: linear-gradient(to right, white 50%, transparent 50%);
-    background-size: 200% 100%;
+    background: linear-gradient(to right, white 45%, #544092 50%, #14a9e2 65%, #6dc2b4 100%);
+    background-size: 220% 100%;
     background-position: right;
     font-size: 1.5vw;
     padding: 1vw;
@@ -12,16 +12,17 @@
     -moz-border-radius: 5vw;
     -ms-border-radius: 5vw;
     -o-border-radius: 5vw;
-    transition: background-position 0.3s linear, color 0.4s linear;
-    -webkit-transition: background-position 0.3s linear, color 0.4s linear;
-    -moz-transition: background-position 0.3s linear, color 0.4s linear;
-    -ms-transition: background-position 0.3s linear, color 0.4s linear;
-    -o-transition: background-position 0.3s linear, color 0.4s linear;
+    transition: background-position 0.2s linear, color 0.4s linear;
+    -webkit-transition: background-position 0.2s linear, color 0.4s linear;
+    -moz-transition: background-position 0.2s linear, color 0.4s linear;
+    -ms-transition: background-position 0.2s linear, color 0.4s linear;
+    -o-transition: background-position 0.2s linear, color 0.4s linear;
+    color: white;
 }
 
 .link-btn:hover {
     background-position: left;
-    color: black;
+    color: #14a9e2;
 }
 
 /* Content */
@@ -40,6 +41,7 @@
     font-size: 8vw;
     margin-bottom: clamp(30px, 5vmin, 50px);
     letter-spacing: 2px;
+    text-shadow: 0.4vw 0.4vw 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Parargragefa */
@@ -49,6 +51,7 @@
     line-height: 4vw;
     letter-spacing: 0.1vw;
     font-family: Cunia;
+    text-shadow: 0.4vw 0.4vw 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Button */
@@ -86,5 +89,80 @@
         -moz-transform: translateY(0%);
         -ms-transform: translateY(0%);
         -o-transform: translateY(0%);
+    }
+}
+
+@keyframes appearLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------- Mobile Version -------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 1000px) {
+
+    /* Content */
+    .content {
+        top: 10vh;
+        left: 35vw;
+        width: 60vw;
+    }
+
+    /* Title */
+    .content>h2 {
+        font-size: 8vw;
+        margin-bottom: clamp(30px, 5vmin, 50px);
+        letter-spacing: 2px;
+    }
+
+    /* Parargragefa */
+    .content>h3 {
+        font-size: 3vw;
+        margin-bottom: clamp(30px, 5vmin, 50px);
+        line-height: 4vw;
+        letter-spacing: 0.1vw;
+        font-family: Cunia;
+    }
+
+    /* Button */
+    .content>button {
+        width: fit-content;
+        font-family: Cunia;
+        font-size: 2.5vw;
     }
 }
