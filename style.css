@@ -16,7 +16,8 @@
   color: white;
 }
 
-html, body {
+html,
+body {
   overflow: hidden;
 }
 
@@ -34,7 +35,7 @@ main {
   position: relative;
 }
 
-.bkg-bottle {
+#bkg-bottle {
   height: 100vh;
   width: 100vw;
   object-fit: cover;
@@ -170,6 +171,13 @@ button:hover {
   line-height: 180%;
 }
 
+#think>h1:nth-child(1) {
+  display: none;
+}
+#think>h1:nth-child(2) {
+  display: block;
+}
+
 #think h1 {
   padding: 0;
   margin: 0;
@@ -191,23 +199,50 @@ button:hover {
 /* -------------------------------------- Mobile Version -------------------------------------- */
 /* -------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 1000px) {
-  .buttons {
-    width: 35%;
-  }
-
   #comp-btn {
     text-align: right;
     bottom: calc(50% + 20vw);
     left: 50%;
+    width: 45%;
   }
 
   #offer-btn {
     bottom: calc(50% - 5vw);
     left: 57%;
+    width: 35%;
   }
 
   #benefits-btn {
     bottom: calc(50% - 30vw);
     left: 54%;
+  }
+
+
+  #think {
+    top: clamp(15vh, 20vh ,20vh);
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    font-size: clamp(16px, 5vw, 30px);
+    line-height: 200%;
+  }
+
+  #think>h1:nth-child(1) {
+    display: none;
+  }
+  #think>h1:nth-child(2) {
+    display: block;
+  }
+
+  #zinc {
+    position: absolute;
+    left: calc(50% - 49vw);
+    top: calc(50% + 40vw);
+    width: 33vw;
   }
 }
