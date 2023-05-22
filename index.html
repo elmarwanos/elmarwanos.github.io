@@ -26,8 +26,11 @@
             <!-- NEW box -->
             <div class="out-of-zoom" id="new">NEW</div>
             <!-- Background with bottle -->
-            <img draggable="false" id="bkg-bottle" src="./images/Bkg-desktop.jpg"
-                alt="an Al Ain Plus water bottle in a foggy room with stage lights">
+            <picture>
+                <source media="(max-width: 1000px)" srcset="./images/Bkg-mobile.jpg">
+                <img draggable="false" id="bkg-bottle" src="./images/Bkg-desktop.jpg"
+                    alt="an Al Ain Plus water bottle in a foggy room with stage lights">
+            </picture>
             <!-- Link Buttons -->
             <button onclick="buttonClick(1)" class="buttons" id="comp-btn">COMPETITION</button>
             <button onclick="buttonClick(2)" class="buttons" id="offer-btn">OFFER</button>
