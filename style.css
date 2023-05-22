@@ -16,14 +16,14 @@
   color: white;
 }
 
-button:hover {
-  cursor: pointer;
+html {
+  overflow: hidden;
 }
 
 body {
+  position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
   min-width: 500px;
 }
 
@@ -47,6 +47,10 @@ main {
   -ms-transition: transform 1s cubic-bezier(0, -0.01, .17, .89);
   -o-transition: transform 1s cubic-bezier(0, -0.01, .17, .89);
   z-index: 0;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 #back {
