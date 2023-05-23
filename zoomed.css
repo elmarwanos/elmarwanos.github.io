@@ -163,7 +163,7 @@
     .content>h3 {
         font-size: clamp(21px, 4.2vw, 40px);
         margin-bottom: clamp(30px, 5vmin, 50px);
-        line-height: 5.5vw;
+        line-height: 6vw;
         letter-spacing: 0.1vw;
         font-family: Cunia;
     }
