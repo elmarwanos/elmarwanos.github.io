@@ -28,7 +28,7 @@ function buttonClick(btnNum) {
     switch (btnNum) {
         case 1:
             // Zoom in to top right
-            img.style.transformOrigin = "top right";
+            img.style.transformOrigin = "100% 20%";
             img.style.transform = "scale(1.8)";
             btns.forEach(btn => {
                 btn.style.transform = "translate(-50vw, 25vh)";
