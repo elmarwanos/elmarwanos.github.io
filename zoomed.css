@@ -154,16 +154,16 @@
 
     /* Title */
     .content>h2 {
-        font-size: clamp(35px, 9.5vw, 80px);
+        font-size: clamp(35px, 10.2vw, 80px);
         margin-bottom: clamp(30px, 5vw, 50px);
         letter-spacing: 2px;
     }
 
     /* Parargragefa */
     .content>h3 {
-        font-size: clamp(18px, 3.8vw, 38px);
+        font-size: clamp(18px, 4.2vw, 40px);
         margin-bottom: clamp(30px, 5vmin, 50px);
-        line-height: 5vw;
+        line-height: 5.5vw;
         letter-spacing: 0.1vw;
         font-family: Cunia;
     }
@@ -172,7 +172,7 @@
     .content>button {
         width: fit-content;
         font-family: Cunia;
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     #comp-content {
