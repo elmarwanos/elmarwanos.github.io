@@ -34,6 +34,8 @@
     top: 10vh;
     left: 30vw;
     width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* Title */
@@ -46,9 +48,9 @@
 
 /* Parargragefa */
 .content>h3 {
-    font-size: 2.8vw;
+    font-size: clamp(20px, 2.8vw, 50px);
     margin-bottom: clamp(30px, 5vmin, 50px);
-    line-height: 4vw;
+    line-height: clamp(16px, 4vw, 50px);
     letter-spacing: 0.1vw;
     font-family: Cunia;
     text-shadow: 0.4vw 0.4vw 5px rgba(0, 0, 0, 0.3);
@@ -61,13 +63,20 @@
     font-size: 2.3vw;
 }
 
-/* Content SECTION */
-.content {
-    flex-direction: column;
-    justify-content: space-between;
+/* -------------------------------------------------------------------------------------------- */
+/* -------------------------------- Individual Zoomed Sections -------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+#offer-content {
+    left: 40vw;
 }
 
-/* ANIMATIONS */
+#benefits-content {
+    left: 45vw;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* ---------------------------------------- ANIMATIONS ---------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
 @keyframes appear {
     0% {
         opacity: 0;
@@ -165,4 +174,17 @@
         font-family: Cunia;
         font-size: 2.5vw;
     }
+
+    #comp-content {
+        left: 25vw;
+    }
+
+    #offer-content {
+        left: 33vw;
+    }
+
+    #benefits-content {
+        left: 37vw;
+    }
+
 }

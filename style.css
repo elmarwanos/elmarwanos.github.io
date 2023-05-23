@@ -93,7 +93,7 @@ button:hover {
   text-align: end;
   background-color: transparent;
   padding-bottom: 0px;
-  width: clamp(150px, 40%, 40%);
+  width: clamp(150px, 37%, 37%);
   transition: padding 0.3s ease 0s, transform 1s cubic-bezier(0, -0.01, .17, .89) 0s, opacity 0.3s linear;
   -webkit-transition: padding 0.3s ease 0s, transform 1s cubic-bezier(0, -0.01, .17, .89) 0s, opacity 0.3s linear;
   -moz-transition: padding 0.3s ease 0s, transform 1s cubic-bezier(0, -0.01, .17, .89) 0s, opacity 0.3s linear;
@@ -134,12 +134,14 @@ button:hover {
 
 #offer-btn {
   bottom: 54%;
-  left: 50%;
+  left: 55%;
+  width: clamp(150px, 32%, 32%);
 }
 
 #benefits-btn {
   bottom: 20%;
   left: 54%;
+  width: clamp(150px, 33.5%, 33.5%);
 }
 
 /* -------------------------------- Static Assets -------------------------------- */
@@ -229,8 +231,8 @@ button:hover {
 
   #offer-btn {
     bottom: calc(50% - 5vw);
-    left: 57%;
-    width: 35%;
+    left: 60%;
+    width: 30%;
   }
 
   #benefits-btn {
