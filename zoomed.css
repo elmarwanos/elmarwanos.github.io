@@ -154,14 +154,14 @@
 
     /* Title */
     .content>h2 {
-        font-size: clamp(35px, 10.2vw, 80px);
+        font-size: clamp(35px, 10vw, 80px);
         margin-bottom: clamp(30px, 5vw, 50px);
         letter-spacing: 2px;
     }
 
     /* Parargragefa */
     .content>h3 {
-        font-size: clamp(18px, 4.2vw, 40px);
+        font-size: clamp(21px, 4.2vw, 40px);
         margin-bottom: clamp(30px, 5vmin, 50px);
         line-height: 5.5vw;
         letter-spacing: 0.1vw;
@@ -176,7 +176,7 @@
     }
 
     #comp-content {
-        left: 22vw;
+        left: 20vw;
     }
 
     #offer-content {
