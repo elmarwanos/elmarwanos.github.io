@@ -28,6 +28,7 @@ function buttonClick(btnNum) {
     switch (btnNum) {
         case 1:
             // Zoom in to top right
+            img.style.filter = "blur(5px)";
             img.style.transformOrigin = "100% 20%";
             img.style.transform = "scale(1.8)";
             btns.forEach(btn => {
@@ -38,6 +39,7 @@ function buttonClick(btnNum) {
 
         case 2:
             // Zoom in to top right
+            img.style.filter = "blur(5px)";
             img.style.transformOrigin = "right";
             img.style.transform = "scale(1.8)";
             btns.forEach(btn => {
@@ -48,6 +50,7 @@ function buttonClick(btnNum) {
 
         case 3:
             // Zoom in to top right
+            img.style.filter = "blur(5px)";
             img.style.transformOrigin = "bottom right";
             img.style.transform = "scale(1.9)";
             btns.forEach(btn => {
@@ -68,13 +71,15 @@ function buttonClick(btnNum) {
 }
 
 function goBack() {
+    img.style.filter = "blur(0px)";
+
     // Hide other elements
     outOfZooms.forEach(outOfZoom => {
         outOfZoom.style.opacity = 1;
     })
 
     // Resume Scrolling
-    body.style.overflowY = "scroll";
+    // body.style.overflowY = "scroll";
 
     img.style.transform = "scale(1)";
     img.style.zIndex = "0";

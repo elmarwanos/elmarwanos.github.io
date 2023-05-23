@@ -8,6 +8,11 @@
   src: url(./fonts/cunia.ttf);
 }
 
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/avenir_roman_12.ttf);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -25,6 +30,7 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
+  background-color: #14a9e2;
 }
 
 main {
@@ -40,11 +46,11 @@ main {
   width: 100vw;
   object-fit: cover;
   object-position: center;
-  transition: transform 1s cubic-bezier(0, -0.01, .17, .89);
-  -webkit-transition: transform 1s cubic-bezier(0, -0.01, .17, .89);
-  -moz-transition: transform 1s cubic-bezier(0, -0.01, .17, .89);
-  -ms-transition: transform 1s cubic-bezier(0, -0.01, .17, .89);
-  -o-transition: transform 1s cubic-bezier(0, -0.01, .17, .89);
+  transition: transform 1s cubic-bezier(0, -0.01, .17, .89), filter 1s cubic-bezier(0, -0.01, .17, .89);
+  -webkit-transition: transform 1s cubic-bezier(0, -0.01, .17, .89), filter 1s cubic-bezier(0, -0.01, .17, .89);
+  -moz-transition: transform 1s cubic-bezier(0, -0.01, .17, .89), filter 1s cubic-bezier(0, -0.01, .17, .89);
+  -ms-transition: transform 1s cubic-bezier(0, -0.01, .17, .89), filter 1s cubic-bezier(0, -0.01, .17, .89);
+  -o-transition: transform 1s cubic-bezier(0, -0.01, .17, .89), filter 1s cubic-bezier(0, -0.01, .17, .89);
   z-index: 0;
 }
 
@@ -94,15 +100,14 @@ button:hover {
   background-color: transparent;
   padding-bottom: 0px;
   width: clamp(150px, 37%, 37%);
-  transition: padding 0.3s ease 0s, transform 1s cubic-bezier(0, -0.01, .17, .89) 0s, opacity 0.3s linear;
-  -webkit-transition: padding 0.3s ease 0s, transform 1s cubic-bezier(0, -0.01, .17, .89) 0s, opacity 0.3s linear;
-  -moz-transition: padding 0.3s ease 0s, transform 1s cubic-bezier(0, -0.01, .17, .89) 0s, opacity 0.3s linear;
-  -ms-transition: padding 0.3s ease 0s, transform 1s cubic-bezier(0, -0.01, .17, .89) 0s, opacity 0.3s linear;
-  -o-transition: padding 0.3s ease 0s, transform 1s cubic-bezier(0, -0.01, .17, .89) 0s, opacity 0.3s linear;
+  transition: padding 0.3s ease 0s, transform 1s cubic-bezier(0, -0.01, .17, .89) 0s, opacity 0.5s linear;
+  -webkit-transition: padding 0.3s ease 0s, transform 1s cubic-bezier(0, -0.01, .17, .89) 0s, opacity 0.5s linear;
+  -moz-transition: padding 0.3s ease 0s, transform 1s cubic-bezier(0, -0.01, .17, .89) 0s, opacity 0.5s linear;
+  -ms-transition: padding 0.3s ease 0s, transform 1s cubic-bezier(0, -0.01, .17, .89) 0s, opacity 0.5s linear;
+  -o-transition: padding 0.3s ease 0s, transform 1s cubic-bezier(0, -0.01, .17, .89) 0s, opacity 0.5s linear;
   font-size: 4vw;
   text-shadow: 0.4vw 0.4vw 5px rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
-  /* font-family: Cunia; */
 }
 
 .buttons:hover {
