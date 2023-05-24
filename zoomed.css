@@ -31,7 +31,6 @@
 
 /* Content */
 .content {
-    /* border: 3px solid white; */
     padding: 20px;
     display: none;
     animation: appear 1s linear;
@@ -64,6 +63,39 @@
     font-family: Avenir;
     text-shadow: 0.4vw 0.4vw 5px rgba(0, 0, 0, 0.3);
     position: relative;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* ------------------------------------- INDIVIDUAL CONTENT ----------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+#quality-content>h3 {
+    font-size: clamp(10px, 1.5vw, 20px);
+    line-height: clamp(8px, 2vw, 30px);
+}
+
+.scroll-content {
+    height: 100%;
+    overflow-y: scroll;
+    top: 0vh !important;
+    padding-top: 10vh !important;
+    padding-bottom: 30vh !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scroll-content > img {
+    width: 15vw;
+    height: auto;
+}
+
+.scroll-content > img:last-of-type {
+    width: 8vw;
+    height: auto;
+}
+
+
+.scroll-content::-webkit-scrollbar {
+    display: none;
 }
 
 /* -------------------------------------------------------------------------------------------- */
