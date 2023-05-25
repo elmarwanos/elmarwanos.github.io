@@ -5,161 +5,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="prefetch" href="./images/Bkg-desktop.jpg">
+    <title>Al Ain Plus</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="zoomed.css">
-    <title>Al Ain Plus - Al Ain Water</title>
 </head>
 
 <body>
-    <header></header>
-    <main>
-        <div id="bottle-wrapper">
-            <!-- Think Text -->
-            <div class="out-of-zoom" id="think">
-                <h1><span>THINK</span><br>IMMUNITY,<br><span>THINK</span><br>AL AIN<br>PLUS.</h1>
-                <h1><span>THINK</span> IMMUNITY,<br><span>THINK</span> AL AIN PLUS.</h1>
-                <img draggable="false" id="zinc" src="./images/ZINC.png"
-                    alt="Fortified With Zinc statement written in blue gradient">
-            </div>
-            <!-- Al Ain Logo -->
-            <a href="https://www.alainwater.com/"><img class="out-of-zoom" id="alAinLogo" src="./images/PLUS LOGO.png"
-                    alt="AlAin Bottled Drinking Water logo with the Al Ain Plus logo beneath it"></a>
-            <!-- NEW box -->
-            <div class="out-of-zoom" id="new">NEW</div>
-            <!-- Background with bottle -->
-            <picture>
-                <source media="(max-width: 1000px)" srcset="./images/Bkg-mobile.jpg">
-                <img draggable="false" id="bkg-bottle" src="./images/Bkg-desktop.jpg"
-                    alt="an Al Ain Plus water bottle in a foggy room with stage lights">
-            </picture>
-            <!-- Link Buttons -->
-            <button onclick="buttonClick(1)" class="buttons" id="comp-btn">COMPETITION</button>
-            <button onclick="buttonClick(2)" class="buttons" id="offer-btn">TRY IT NOW</button>
-            <button onclick="buttonClick(3)" class="buttons" id="benefits-btn">HOW IS IT DIFFERENT?</button>
-            <button onclick="buttonClick(4)" class="buttons" id="quality-btn">QUALITY</button>
-        </div>
-        <!-- Competition Zoomed in Content -->
-        <div class="content" id="comp-content">
-            <h2>COMPETITION</h2>
-            <h3>Visit our Instagram page, participate in the competition on the feed, and win worthwhile prizes!</h3>
-            <button class="link-btn">CLICK HERE</button>
-        </div>
-        <!-- Offer Zoomed in Content -->
-        <div class="content" id="offer-content">
-            <h2>TRY IT NOW</h2>
-            <h3>We want everyone to get their hands on the spectacular PLUS bottle. Order through this link and get an
-                offer.</h3>
-            <button class="link-btn">CLICK HERE</button>
-        </div>
-        <!-- Benefits Zoomed in Content -->
-        <div class="content scroll-content" id="benefits-content">
-            <div>
-                <h2>HOW IS IT DIFFERENT?</h2>
-                <h3>The exquisite, iridescent design of the PLUS also comes packed with beneficial immune boosting
-                    properties perfect to up your zinc levels.</h3>
-                <span class="order-btns">
-                    <button disabled onclick="order(0, 'back')">
-                        <svg style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path
-                                d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
-                                fill="#FFF"></path>
-                        </svg>
-                    </button>
-                    <button onclick="order(0, 'next')"><svg style="color: white" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512">
-                            <path
-                                d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
-                                fill="#FFF"></path>
-                        </svg></button>
-                </span>
-            </div>
+    <!----------------------------------------------------------------------------------------------->
+    <!------------------------------------------- VIDEOS -------------------------------------------->
+    <!----------------------------------------------------------------------------------------------->
+    <video autoplay muted id="bkg-back">
+        <source src="/assets/bkg-back.mp4" type="video/mp4">
+    </video>
+    <video muted loop id="bkg-front">
+        <source src="/assets/bkg-front.mp4" type="video/mp4">
+    </video>
 
-            <!-- <button class="link-btn">CLICK HERE</button> -->
-            <div>
-                <img width="200" src="/images/ZINC ICON.png" alt="Zinc icon">
-                <h3>Fortified with Zinc & magnesium minerals which support normal function of immune system, strengthens
-                    bones & reduce fatigue</h3>
-                <span class="order-btns">
-                    <button onclick="order(1, 'back')"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path
-                            d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
-                            fill="#FFF"></path>
-                    </svg></button>
-                    <button onclick="order(1, 'next')"><svg style="color: white" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512">
-                        <path
-                            d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
-                            fill="#FFF"></path>
-                    </svg></button>
-                </span>
-            </div>
 
-            <div>
-                <img width="200" src="/images/SODIUM FREE.png" alt="Sodium Free Icon">
-                <h3>Healthier and refreshing for individuals who are looking to maintain a low-sodium diet</h3>
-                <span class="order-btns">
-                    <button onclick="order(2, 'back')"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path
-                            d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
-                            fill="#FFF"></path>
-                    </svg></button>
-                    <button onclick="order(2, 'next')"><svg style="color: white" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512">
-                        <path
-                            d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
-                            fill="#FFF"></path>
-                    </svg></button>
-                </span>
-            </div>
 
-            <div>
-                <img id="same-great-taste" width="200" src="/images/SAME GREAT TASTE.png" alt="Same great taste">
-                <h3>Replenish your body every time you drink Al Ain Plus without compromising on the same great taste
-                </h3>
-                <span class="order-btns">
-                    <button onclick="order(3, 'back')"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path
-                            d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
-                            fill="#FFF"></path>
-                    </svg></button>
-                    <button disabled onclick="order(3, 'next')"><svg style="color: white" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512">
-                        <path
-                            d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
-                            fill="#FFF"></path>
-                    </svg></button>
-                </span>
-            </div>
-        </div>
-        <!-- Quality Zoomed in Content -->
-        <div class="content" id="quality-content">
-            <h2>QUALITY</h2>
-            <h3>Al Ain Water is among the first bottled water brands to receive the coveted Emirates Quality Mark, a
-                mandatory certification for all bottled water brands in UAE.
-                <br><br>
-                In addition, our superior quality has also been recognized with numerous awards including the Sheikh
-                Khalifa Excellence Award and the Middle East Bottled Water Suppliers Excellence Award.
-                <br><br>
-                The International Taste & Quality Institute, a revered name in F&B testing, recently presented us
-                The Superior Taste Award for Al Ain Water.
-                <br><br>
-                It is a glowing testament to our world-class standard and refreshing taste, which is evident in each
-                of our innovation.
-            </h3>
-            <button class="link-btn">CLICK HERE</button>
-        </div>
-        <!-- Back Button -->
-        <button id="back" onclick="goBack()">
-            <svg style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path
-                    d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
-                    fill="white"></path>
-            </svg>
-        </button>
-    </main>
-    <footer></footer>
-    <script src="./index.js"></script>
+    <!----------------------------------------------------------------------------------------------->
+    <!------------------------------------------- MAIN SCREEN --------------------------------------->
+    <!----------------------------------------------------------------------------------------------->
+    <h1 class="main-screen" id="title"><span class="gradient-text">Think</span> Immunity<br><span
+            class="gradient-text">Think</span> Plus</h1>
+    <img class="main-screen" id="logo" src="/assets/logo.png" alt="Al Ain Logo">
+    <img class="main-screen" id="zinc-stamp" src="/assets/zinc-stamp.png" alt="Fortified with Zinc Stamp">
+
+
+
+    <!----------------------------------------------------------------------------------------------->
+    <!------------------------------------------- BUTTONS ------------------------------------------->
+    <!----------------------------------------------------------------------------------------------->
+    <button id="competition-btn" class="buttons" onclick="buttonClick(1)">COMPETITION</button>
+    <svg class="main-screen" id="competition-svg" width="318" height="218" viewBox="0 0 318 218" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 2H102" fill="white" stroke="white" stroke-width="0.3em" stroke-linecap="round" />
+        <path
+            d="M103.061 0.93934C102.475 0.353553 101.525 0.353553 100.939 0.93934C100.354 1.52513 100.354 2.47487 100.939 3.06066L103.061 0.93934ZM100.939 3.06066L277.716 179.837L279.837 177.716L103.061 0.93934L100.939 3.06066Z"
+            fill="white" stroke="white" stroke-width="0.1em" stroke-linecap="round" />
+        <circle cx="290" cy="192" r="17" stroke="white" stroke-width="0.2em" />
+        <circle cx="289.5" cy="191.5" r="5" fill="white" stroke="white" stroke-width="0.2em" />
+    </svg>
+
+    <button id="different-btn" class="buttons" onclick="buttonClick(2)">HOW IS IT DIFFERENT?</button>
+    <svg class="main-screen" id="different-svg" width="318" height="218" viewBox="0 0 318 218" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M316 2H216" stroke="white" stroke-width="0.3em" stroke-linecap="round" />
+        <path
+            d="M214.939 0.93934C215.525 0.353553 216.475 0.353553 217.061 0.93934C217.646 1.52513 217.646 2.47487 217.061 3.06066L214.939 0.93934ZM217.061 3.06066L40.284 179.837L38.1626 177.716L214.939 0.93934L217.061 3.06066Z"
+            fill="white" stroke="white" stroke-width="0.1em" stroke-linecap="round" />
+        <circle cx="24" cy="24" r="19.5" transform="matrix(-1 0 0 1 48 170)" stroke="white" stroke-width="0.2em" />
+        <circle cx="10.5" cy="10.5" r="7" transform="matrix(-1 0 0 1 35 183)" fill="white" stroke="white"
+            stroke-width="0.2em" />
+    </svg>
+
+    <button id="try-it-btn" class="buttons" onclick="buttonClick(3)">TRY IT NOW</button>
+    <svg class="main-screen" id="try-it-svg" width="359" height="166" viewBox="0 0 359 166" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 2.00002H102" stroke="white" stroke-width="0.3em" stroke-linecap="round" />
+        <path
+            d="M102.244 0.700962C101.526 0.286748 100.609 0.532561 100.195 1.25C99.7804 1.96744 100.026 2.88482 100.744 3.29904L102.244 0.700962ZM100.744 3.29904L317.25 128.299L318.75 125.701L102.244 0.700962L100.744 3.29904Z"
+            fill="white" stroke="white" stroke-width="0.1em" stroke-linecap="round" />
+        <circle cx="333" cy="140" r="19.5" stroke="white" stroke-width="0.2em" />
+        <circle cx="332.5" cy="140.5" r="7" fill="white" stroke="white" stroke-width="0.2em" />
+    </svg>
+
+    <button id="quality-btn" class="buttons" onclick="buttonClick(4)">QUALITY</button>
+    <svg class="main-screen" id="quality-svg" width="359" height="166" viewBox="0 0 359 166" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M357 164H257" stroke="white" stroke-width="0.3em" stroke-linecap="round" />
+        <path
+            d="M256.756 165.299C257.474 165.713 258.391 165.467 258.805 164.75C259.22 164.033 258.974 163.115 258.256 162.701L256.756 165.299ZM258.256 162.701L41.75 37.701L40.25 40.299L256.756 165.299L258.256 162.701Z"
+            fill="white" stroke="white" stroke-width="0.1em" stroke-linecap="round" />
+        <circle cx="21" cy="21" r="19.5" transform="rotate(-180 24 24)" stroke="white" stroke-width="0.2em" />
+        <circle cx="21.5" cy="21.5" r="7" transform="rotate(-180 24.5 24.5)" fill="white" stroke="white"
+            stroke-width="0.2em" />
+    </svg>
+
+
+
+    <!----------------------------------------------------------------------------------------------->
+    <!------------------------------------------- HIDDEN SECTIONS ----------------------------------->
+    <!----------------------------------------------------------------------------------------------->
+    <!------------------------------------------- BACK BUTTON -->
+    <button id="back" onclick="goBack()">
+        <svg style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+                d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
+                fill="white"></path>
+        </svg>
+    </button>
+    <!------------------------------------------- COMPETITION SECTION -->
+    <div class="hidden-sections" id="competition-section">
+        <p>Visit our Instagram page, participate in the competition on the feed, and win worthwhile prizes!</p>
+        <button>Click Here</button>
+    </div>
+    <!------------------------------------------- DIFFERENT SECTION -->
+    <div class="hidden-sections" id="different-section">
+        <p>The exquisite, iridescent design of the PLUS also comes packed with beneficial immune boosting properties
+            perfect to up your zinc levels.</p>
+        <br>
+        <img id="zinc-icon" src="/assets/zinc-icon.png" alt="Zinc Icon">
+        <p>Fortified with Zinc & magnesium minerals which support normal function of immune system, strengthens bones &
+            reduce fatigue.</p>
+        <br>
+        <img id="sodium-icon" src="/assets/sodium-icon.png" alt="Sodium Icon">
+        <p>Healthier and refreshing for individuals who are looking to maintain a low-sodium diet.</p>
+        <br>
+        <img id="same-icon" src="/assets/same-great-taste-icon.png" alt="Same Great Taste Icon">
+        <p>Replenish your body every time you drink Al Ain Plus without compromising on the same great taste.</p>
+    </div>
+    <!------------------------------------------- TRY IT NOW SECTION -->
+    <div class="hidden-sections" id="try-it-section">
+        <p>We want everyone to get their hands on the spectacular PLUS bottle. Order through this link and get an
+            offer.</p>
+        <button>Click Here</button>
+    </div>
+    <!------------------------------------------- QUALITY SECTION -->
+    <div class="hidden-sections" id="quality-section">
+        <p>Al Ain Water is among the first bottled water brands to receive the coveted Emirates Quality Mark, a
+            mandatory certification for all bottled water brands in UAE.</p>
+        <br>
+        <p>In addition, our superior quality has also been recognized with numerous awards including the Sheikh Khalifa
+            Excellence Award and the Middle East Bottled Water Suppliers Excellence Award.</p>
+        <br>
+        <p>The International Taste & Quality Institute, a revered name in F&B testing, recently presented us The
+            Superior Taste Award for Al Ain Water.</p>
+        <br>
+        <p>It is a glowing testament to our world-class standard and refreshing taste, which is evident in each of our
+            innovation.</p>
+    </div>
+    <!----------------------------------------------------------------------------------------------->
+    <!------------------------------------------- SCRIPTS ------------------------------------------->
+    <!----------------------------------------------------------------------------------------------->
+    <script src="/index.js"></script>
 </body>
 
 </html>
