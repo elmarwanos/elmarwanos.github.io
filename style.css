@@ -31,7 +31,6 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #14a9e2;
-  overflow-y: scroll;
 }
 
 main {

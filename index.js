@@ -28,9 +28,6 @@ function buttonClick(btnNum) {
         outOfZoom.style.opacity = 0;
     })
 
-    //Stop Scrolling
-    body.style.overflowY = "hidden";
-
     switch (btnNum) {
         case 1:
             img.style.filter = "blur(5px)";
@@ -61,7 +58,6 @@ function buttonClick(btnNum) {
             });
             benefitsContent.style.display = "flex";
             benefitsIsClicked = true;
-            // body.style.overflowY = "scroll";
             break;
 
         case 4:
@@ -94,9 +90,6 @@ function goBack() {
     outOfZooms.forEach(outOfZoom => {
         outOfZoom.style.opacity = 1;
     })
-
-    // Resume Scrolling
-    // body.style.overflowY = "scroll";
 
     img.style.transform = "scale(1)";
     img.style.zIndex = "0";
