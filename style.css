@@ -254,7 +254,7 @@ body {
 }
 
 .hidden-sections>*:last-child {
-    margin-bottom: 200px;
+    margin-bottom: 300px;
 }
 
 .hidden-sections::-webkit-scrollbar {
@@ -324,10 +324,12 @@ body {
 #sodium-icon,
 #same-icon {
     width: 20%;
+    min-width: 100px;
 }
 
 #same-icon {
     width: 10%;
+    min-width: 50px;
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -451,6 +453,27 @@ body {
         text-shadow: 0 0 0;
     }
 
-    100% {
+    100% {}
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------- MOBILE VERSION ----------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+@media only screen and (max-width: 1000px) {
+    #title {
+        padding: 5vh 0 0 0;
+    }
+
+    #logo {
+        width: 15vw;
+    }
+
+    #zinc-stamp {
+        width: 20vw;
+    }
+
+    #back {
+        width: 50px;
+        padding: 6px 10px 4px 15px;
     }
 }
