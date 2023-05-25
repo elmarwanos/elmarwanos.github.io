@@ -52,23 +52,84 @@
                 offer.</h3>
             <button class="link-btn">CLICK HERE</button>
         </div>
-        <div>
-            <!-- Benefits Zoomed in Content -->
-            <div class="content scroll-content" id="benefits-content">
+        <!-- Benefits Zoomed in Content -->
+        <div class="content scroll-content" id="benefits-content">
+            <div>
                 <h2>HOW IS IT DIFFERENT?</h2>
                 <h3>The exquisite, iridescent design of the PLUS also comes packed with beneficial immune boosting
                     properties perfect to up your zinc levels.</h3>
-                <!-- <button class="link-btn">CLICK HERE</button> -->
-                    <img width="200" src="/images/ZINC ICON.png" alt="Zinc icon">
+                <span class="order-btns">
+                    <button disabled onclick="order(0, 'back')">
+                        <svg style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
+                                fill="#FFF"></path>
+                        </svg>
+                    </button>
+                    <button onclick="order(0, 'next')"><svg style="color: white" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
+                                fill="#FFF"></path>
+                        </svg></button>
+                </span>
+            </div>
+
+            <!-- <button class="link-btn">CLICK HERE</button> -->
+            <div>
+                <img width="200" src="/images/ZINC ICON.png" alt="Zinc icon">
                 <h3>Fortified with Zinc & magnesium minerals which support normal function of immune system, strengthens
                     bones & reduce fatigue</h3>
-                    <img width="200" src="/images/SODIUM FREE.png" alt="Sodium Free Icon">
-                <h3>Healthier and refreshing for individuals who are looking to maintain a low-sodium diet</h3>
+                <span class="order-btns">
+                    <button onclick="order(1, 'back')"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
+                            fill="#FFF"></path>
+                    </svg></button>
+                    <button onclick="order(1, 'next')"><svg style="color: white" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
+                            fill="#FFF"></path>
+                    </svg></button>
+                </span>
+            </div>
 
-                    <img width="200" src="/images/SAME GREAT TASTE.png" alt="Same great taste">
+            <div>
+                <img width="200" src="/images/SODIUM FREE.png" alt="Sodium Free Icon">
+                <h3>Healthier and refreshing for individuals who are looking to maintain a low-sodium diet</h3>
+                <span class="order-btns">
+                    <button onclick="order(2, 'back')"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
+                            fill="#FFF"></path>
+                    </svg></button>
+                    <button onclick="order(2, 'next')"><svg style="color: white" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
+                            fill="#FFF"></path>
+                    </svg></button>
+                </span>
+            </div>
+
+            <div>
+                <img id="same-great-taste" width="200" src="/images/SAME GREAT TASTE.png" alt="Same great taste">
                 <h3>Replenish your body every time you drink Al Ain Plus without compromising on the same great taste
                 </h3>
-
+                <span class="order-btns">
+                    <button onclick="order(3, 'back')"><svg style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
+                            fill="#FFF"></path>
+                    </svg></button>
+                    <button disabled onclick="order(3, 'next')"><svg style="color: white" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M9.375 233.4l128-128c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L109.3 224H480c17.69 0 32 14.31 32 32s-14.31 32-32 32H109.3l73.38 73.38c12.5 12.5 12.5 32.75 0 45.25c-12.49 12.49-32.74 12.51-45.25 0l-128-128C-3.125 266.1-3.125 245.9 9.375 233.4z"
+                            fill="#FFF"></path>
+                    </svg></button>
+                </span>
             </div>
         </div>
         <!-- Quality Zoomed in Content -->

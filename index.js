@@ -5,8 +5,9 @@ var compContent;
 var body;
 var outOfZoo;
 var benefitsIsClicked = false;
-var scrollContentWrapper;
 var scrollers;
+var scrollContent;
+var currVisibleContent
 
 window.onload = function () {
     back = document.querySelector("#back");
@@ -18,8 +19,42 @@ window.onload = function () {
     qualityContent = document.querySelector("#quality-content");
     body = document.querySelector("body");
     outOfZooms = document.querySelectorAll(".out-of-zoom");
-    scrollers = document.querySelectorAll(".scroll-content")
-    scrollContentWrapper = document.querySelector("#scroll-content-wrapper");
+    scrollers = document.querySelectorAll(".scroll-content > div")
+    scrollContent = document.querySelector(".scroll-content");
+
+    // -------------------------------------- SCROLL LISTENER ----------------------------------------
+    scrollContent.addEventListener("scroll", (event) => {
+        if (benefitsIsClicked === true) {
+            var yPos = scrollContent.scrollTop;
+
+            if (yPos < 100) {
+                showCurrContent(0);
+            } else if (yPos > 100 && yPos < 200) {
+                showCurrContent(1);
+            } else if (yPos > 200 && yPos < 300) {
+                showCurrContent(2);
+            } else if (yPos > 300) {
+                showCurrContent(3);
+                scrollContent.scrollTo(0, 300);
+            }
+        }
+    })
+}
+
+function showCurrContent(order) {
+    for (let i = 0; i < scrollers.length; i++) {
+        if (i === order) {
+            continue;
+        }
+        const scroller = scrollers[i];
+        scroller.style.animationName = "none";
+        scroller.style.opacity = "0";
+        scroller.style.position = "static";
+    }
+
+    scrollers[order].style.animationName = "appearUp";
+    scrollers[order].style.opacity = "1";
+    scrollers[order].style.position = "fixed";
 }
 
 function buttonClick(btnNum) {
@@ -58,6 +93,7 @@ function buttonClick(btnNum) {
             });
             benefitsContent.style.display = "flex";
             benefitsIsClicked = true;
+            showCurrContent(0)
             break;
 
         case 4:
@@ -110,34 +146,38 @@ function goBack() {
     back.style.display = "none";
 }
 
-
-document.addEventListener("scroll", (event) => {
-    console.log("nbdsauiodg")
-    if (benefitsIsClicked === true) {
-        console.log("nbdsauiodg")
-        var currVisibleContent = 0;
-        showCurrContent(currVisibleContent);
-
-        if (window.pageYOffset > 817) {
-            if (currVisibleContent < 4) {
-                currVisibleContent += 1;
-                showCurrContent(currVisibleContent);
+function order(num, direction) {
+    switch (num) {
+        case 0:
+            if (direction === "back") {
+                //disable
+            } else if (direction === "next") {
+                showCurrContent(1)
             }
-        }
-
-        if (window.pageYOffset < 817) {
-            if (currVisibleContent > -1) {
-                currVisibleContent -= 1;
-                showCurrContent(currVisibleContent);
+            break;
+        case 1:
+            if (direction === "back") {
+                showCurrContent(0)
+            } else if (direction === "next") {
+                showCurrContent(2)
             }
-        }
+            break;
+        case 2:
+            if (direction === "back") {
+                showCurrContent(1)
+            } else if (direction === "next") {
+                showCurrContent(3)
+            }
+            break;
+        case 3:
+            if (direction === "back") {
+                showCurrContent(2)
+            } else if (direction === "next") {
+                //disable
+            }
+            break;
+
+        default:
+            break;
     }
-});
-
-function showCurrContent(order) {
-    scrollers[0].style.display = "none";
-    scrollers[1].style.display = "none";
-    scrollers[2].style.display = "none";
-    scrollers[3].style.display = "none";
-    scrollers[order].style.display = "flex";
 }
