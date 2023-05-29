@@ -11,12 +11,17 @@
 
 @font-face {
     font-family: Lubalin;
-    src: url(./fonts/LUBALINGRAPHITCTURNERARA-BD.TTF);
+    src: url(/fonts/LUBALINGRAPHITCTURNERARA-BD.TTF);
 }
 
 @font-face {
     font-family: Cunia;
-    src: url(./fonts/cunia.ttf);
+    src: url(/fonts/cunia.ttf);
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(/fonts/avenir_roman_12.ttf);
 }
 
 :root {
@@ -43,6 +48,15 @@ body {
     background: -webkit-linear-gradient(to top right, #544092 5%, #14a9e2 50%, #6dc2b4 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+ul {
+    padding-left: 40px;
+}
+
+p,li {
+    font-family: Avenir;
+    font-size: clamp(1.25rem, 3vw, 3rem);
 }
 
 /* ---------------------------------------------------------------------------------- */
@@ -240,7 +254,7 @@ body {
 .hidden-sections {
     display: none;
     font-size: clamp(1rem, 2vw, 2rem);
-    margin: 50px auto 0 auto;
+    margin: 20px auto 0 auto;
     width: 60%;
     height: 100%;
     max-height: 0;
@@ -267,7 +281,7 @@ body {
     background: linear-gradient(to right, white 45%, #544092 50%, #14a9e2 65%, #6dc2b4 100%);
     background-size: 220% 100%;
     background-position: right;
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 2vw, 1.9rem);
     padding: clamp(10px, 1vw, 1vw);
     border-radius: 5vw;
     -webkit-border-radius: 5vw;
@@ -282,7 +296,6 @@ body {
     color: white;
     width: fit-content;
     font-family: Cunia;
-    font-size: 2.3vw;
     margin-top: clamp(30px, 3vmin, 50px);
 }
 
