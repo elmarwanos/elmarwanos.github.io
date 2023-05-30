@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Din;
+    src: url(/ar/fonts/Linotype\ -\ DIN\ Next\ LT\ Arabic\ Regular.ttf);
+}
+
+body {
+    font-family: Din;
+}
+
+p,li {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+}
+
+#title {
+    font-size: clamp(3.5rem, 7vw, 7rem);
+}
+
+.buttons {
+    font-size: clamp(2rem, 4vw, 4rem);
+}
+
+.hidden-sections {
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+}
+
+.hidden-sections button {
+    font-size: clamp(1rem, 2.5vw, 3rem);
+}

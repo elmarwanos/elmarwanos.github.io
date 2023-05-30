@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Al Ain Plus</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/ar/style.css">
 </head>
 
 <body>
@@ -14,10 +15,10 @@
     <!------------------------------------------- VIDEOS -------------------------------------------->
     <!----------------------------------------------------------------------------------------------->
     <video autoplay muted id="bkg-back">
-        <source src="/assets/bkg-back.mp4" type="video/mp4">
+        <source src="/ar/assets/bkg-back.mp4" type="video/mp4">
     </video>
     <video muted loop id="bkg-front">
-        <source src="/assets/bkg-front.mp4" type="video/mp4">
+        <source src="/ar/assets/bkg-front.mp4" type="video/mp4">
     </video>
 
 
@@ -25,17 +26,17 @@
     <!----------------------------------------------------------------------------------------------->
     <!------------------------------------------- MAIN SCREEN --------------------------------------->
     <!----------------------------------------------------------------------------------------------->
-    <h1 class="main-screen" id="title"><span class="gradient-text">Think</span> Immunity<br><span
-            class="gradient-text">Think</span> Plus</h1>
-    <img class="main-screen" id="logo" src="/assets/logo.png" alt="Al Ain Logo">
-    <img class="main-screen" id="zinc-stamp" src="/assets/zinc-stamp.png" alt="Fortified with Zinc Stamp">
+    <h1 class="main-screen" id="title"><span class="gradient-text">فكّر</span> مناعة<br><span
+            class="gradient-text">فكّر</span> بلس</h1>
+    <img class="main-screen" id="logo" src="/ar/assets/logo-ar.png" alt="Al Ain Logo">
+    <img class="main-screen" id="zinc-stamp" src="/ar/assets/zinc-stamp-ar.png" alt="Fortified with Zinc Stamp">
 
 
 
     <!----------------------------------------------------------------------------------------------->
     <!------------------------------------------- BUTTONS ------------------------------------------->
     <!----------------------------------------------------------------------------------------------->
-    <button id="competition-btn" class="buttons" onclick="buttonClick(1)">COMPETITION</button>
+    <button id="competition-btn" class="buttons" onclick="buttonClick(1)">مسابقات</button>
     <svg class="main-screen" id="competition-svg" width="318" height="218" viewBox="0 0 318 218" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path d="M2 2H102" fill="white" stroke="white" stroke-width="0.3em" stroke-linecap="round" />
@@ -46,7 +47,7 @@
         <circle cx="289.5" cy="191.5" r="5" fill="white" stroke="white" stroke-width="0.2em" />
     </svg>
 
-    <button id="different-btn" class="buttons" onclick="buttonClick(2)">HOW IS IT DIFFERENT?</button>
+    <button id="different-btn" class="buttons" onclick="buttonClick(2)">لماذا هي مختلفة؟</button>
     <svg class="main-screen" id="different-svg" width="318" height="218" viewBox="0 0 318 218" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path d="M316 2H216" stroke="white" stroke-width="0.3em" stroke-linecap="round" />
@@ -58,7 +59,7 @@
             stroke-width="0.2em" />
     </svg>
 
-    <button id="try-it-btn" class="buttons" onclick="buttonClick(3)">TRY IT NOW</button>
+    <button id="try-it-btn" class="buttons" onclick="buttonClick(3)">جرّبها الآن</button>
     <svg class="main-screen" id="try-it-svg" width="359" height="166" viewBox="0 0 359 166" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path d="M2 2.00002H102" stroke="white" stroke-width="0.3em" stroke-linecap="round" />
@@ -69,7 +70,7 @@
         <circle cx="332.5" cy="140.5" r="7" fill="white" stroke="white" stroke-width="0.2em" />
     </svg>
 
-    <button id="quality-btn" class="buttons" onclick="buttonClick(4)">QUALITY</button>
+    <button id="quality-btn" class="buttons" onclick="buttonClick(4)">الجودة</button>
     <svg class="main-screen" id="quality-svg" width="359" height="166" viewBox="0 0 359 166" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path d="M357 164H257" stroke="white" stroke-width="0.3em" stroke-linecap="round" />
@@ -96,40 +97,38 @@
     </button>
     <!------------------------------------------- COMPETITION SECTION -->
     <div class="hidden-sections" id="competition-section">
-        <p>Visit our Instagram page, participate in the competition on the feed, and win worthwhile prizes!</p>
-        <button>Click Here</button>
+        <p>قم بزيارة صفحتنا على إنستغرام، وشارك في مسابقاتنا، لتربح جوائز مذهلة</p>
+        <button>اضغط هنا</button>
     </div>
     <!------------------------------------------- DIFFERENT SECTION -->
     <div class="hidden-sections" id="different-section">
-        <p>The exquisite, iridescent design of the PLUS also comes packed with beneficial immune boosting properties
-            perfect to up your zinc levels.</p>
+        <p>لأننا نريد أن يحتضن الجميع عبوة مياه PLUS الرائعة بأيديهم. اطلب الآن من خلال هذا الرابط واحصل على عرض مدهش.</p>
         <br>
-        <img id="zinc-icon" src="/assets/zinc-icon.png" alt="Zinc Icon">
-        <p>Fortified with Zinc & magnesium minerals which support normal function of immune system, strengthens bones &
-            reduce fatigue.</p>
+        <img id="zinc-icon" src="/ar/assets/zinc-icon-ar.png" alt="Zinc Icon">
+        <p>مدعمة بمعادن الزنك والمغنيسيوم التي تعزز من الوظيفة الطبيعية لجهاز المناعة وتقوي العظام وتقلل التعب.</p>
         <br>
-        <img id="sodium-icon" src="/assets/sodium-icon.png" alt="Sodium Icon">
-        <p>Healthier and refreshing for individuals who are looking to maintain a low-sodium diet.</p>
+        <img id="sodium-icon" src="/ar/assets/sodium-icon-ar.png" alt="Sodium Icon">
+        <p>خيار أكثر صحة وانتعاشاً للأفراد الذين يتطلعون إلى اتباع نظام غذائي منخفض الصوديوم.</p>
         <br>
-        <img id="same-icon" src="/assets/same-great-taste-icon.png" alt="Same Great Taste Icon">
-        <p>Replenish your body every time you drink Al Ain Plus without compromising on the same great taste.</p>
+        <img id="same-icon" src="/ar/assets/same-great-taste-icon-ar.png" alt="Same Great Taste Icon">
+        <p>جدد انتعاشك وقوي مناعتك في كل مرة تشرب فيها مياه العين PLUS مع الاستمتاع بنفس الطعم الرائع.</p>
     </div>
     <!------------------------------------------- TRY IT NOW SECTION -->
     <div class="hidden-sections" id="try-it-section">
         <p>We want everyone to get their hands on the spectacular PLUS bottle. Order through this link and get an
             offer.</p>
-        <button>Click Here</button>
+        <button>اضغط هنا</button>
     </div>
     <!------------------------------------------- QUALITY SECTION -->
     <div class="hidden-sections" id="quality-section">
-        <p>Al Ain Water’s world-class quality has been recognised with numerous awards. The brand follows strict local and international standards to ensure clean, safe, and pure water.</p>
+        <p>جودة مياه العين ذات المستوى العالمي تحظى بالكثير من الإشادة وفازت بالعديد من الجوائز. تتبع العلامة التجارية معايير محلية ودولية صارمة لضمان إنتاج مياه نظيفة وآمنة ونقية.</p>
         <br>
         <ul>
-            <li>It is among the few water brands to receive the Emirates Quality Mark</li>
+            <li>من العلامات التجارية القليلة في مجال المياه التي حصلت على علامة الجودة الإماراتية.</li>
             <br>
-            <li>A recipient of Khalifa Excellence Award and the Middle East Bottled Water Suppliers Excellence Award</li>
+            <li>حائزة على جائزة الشيخ خليفة للتميز وجائزة الشرق الأوسط للتميز في فئة موردي المياه المعبأة.</li>
             <br>
-            <li>Al Ain Water won ‘The Superior Taste Award’ by the International Taste & Quality Institute</li>
+            <li>مياه العين حاصلة على "جائزة المذاق الفائق" من المعهد الدولي للمذاق والجودة.</li>
         </ul>
     </div>
     <!----------------------------------------------------------------------------------------------->
