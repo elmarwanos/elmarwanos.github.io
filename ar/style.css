@@ -28,3 +28,9 @@ p,li {
 .hidden-sections button {
     /* font-size: clamp(1rem, 2.5vw, 3rem); */
 }
+
+@media only screen and (max-width: 1000px) {
+    #title {
+        padding: 12vh 0 0 0;
+    }
+}
