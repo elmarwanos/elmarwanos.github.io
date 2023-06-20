@@ -11,17 +11,17 @@
 
 @font-face {
     font-family: Lubalin;
-    src: url(/fonts/LUBALINGRAPHITCTURNERARA-BD.TTF);
+    src: url(fonts/LUBALINGRAPHITCTURNERARA-BD.TTF);
 }
 
 @font-face {
     font-family: Cunia;
-    src: url(/fonts/cunia.ttf);
+    src: url(fonts/cunia.ttf);
 }
 
 @font-face {
     font-family: Avenir;
-    src: url(/fonts/avenir_roman_12.ttf);
+    src: url(fonts/avenir_roman_12.ttf);
 }
 
 :root {
@@ -54,7 +54,8 @@ ul {
     padding-left: 40px;
 }
 
-p,li {
+p,
+li {
     font-family: Avenir;
     font-size: clamp(1.25rem, 3vw, 3rem);
 }
@@ -164,7 +165,41 @@ p,li {
     background-position: right;
 }
 
+#language-switch {
+    font-family: Lubalin;
+    font-size: 1rem;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    text-decoration: none;
+    color: white;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    background: linear-gradient(to top, #544092 0%, #14a9e2 25%, #6dc2b4 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    border: 2px solid #14a9e2;
+    border-radius: 1vw;
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    -ms-border-radius: 1vw;
+    -o-border-radius: 1vw;
+    transition: background-position 0.2s linear, color 0.4s linear;
+    -webkit-transition: background-position 0.2s linear, color 0.4s linear;
+    -moz-transition: background-position 0.2s linear, color 0.4s linear;
+    -ms-transition: background-position 0.2s linear, color 0.4s linear;
+    -o-transition: background-position 0.2s linear, color 0.4s linear;
+}
 
+#language-switch:hover {
+    cursor: pointer;
+    background-position: bottom;
+}
 
 /* ---------------------------------------------------------------------------------- */
 /* ------------------------------- BUTTONS ------------------------------------------ */

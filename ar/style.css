@@ -1,28 +1,30 @@
 @font-face {
     font-family: Din;
-    src: url(/ar/fonts/Linotype\ -\ DIN\ Next\ LT\ Arabic\ Regular.ttf);
+    src: url(fonts/DIN_Next_LT_Arabic_Regular.ttf);
 }
 
 body {
-    font-family: Din;
+    font-family: Lubalin;
 }
 
 p,li {
-    font-size: clamp(2.5rem, 5vw, 5rem);
+    /* font-size: clamp(2.5rem, 5vw, 5rem); */
 }
 
 #title {
-    font-size: clamp(3.5rem, 7vw, 7rem);
+    /* font-size: clamp(3.5rem, 7vw, 7rem); */
+    padding: 5vmin 0 0 0;
 }
 
 .buttons {
-    font-size: clamp(2rem, 4vw, 4rem);
+    font-size: clamp(1.5rem, 3vw, 4rem);
+    margin-top: -8px;
 }
 
 .hidden-sections {
-    font-size: clamp(1.5rem, 2.5vw, 3rem);
+    /* font-size: clamp(1.5rem, 2.5vw, 3rem); */
 }
 
 .hidden-sections button {
-    font-size: clamp(1rem, 2.5vw, 3rem);
+    /* font-size: clamp(1rem, 2.5vw, 3rem); */
 }
