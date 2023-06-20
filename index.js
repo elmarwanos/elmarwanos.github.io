@@ -25,9 +25,7 @@ window.onload = () => {
         bkgFront.style.display = "block";
         bkgFront.play();
     }
-
 }
-
 
 function buttonClick(btnNum) {
     //Hide other elements
