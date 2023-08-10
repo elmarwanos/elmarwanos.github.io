@@ -50,6 +50,7 @@ function buttonClick(btnNum) {
             btns[0].style.transform = "translate(calc(10.5vw + 25%), -10.5vh)";
             btns[0].style.scale = "2";
             btns[0].style.backgroundPosition = "left";
+            btns[0].style.borderBottom = "none";
             // Display Section
             competitionSection.style.display = "block";
             break;
@@ -70,6 +71,7 @@ function buttonClick(btnNum) {
             btns[1].style.transform = "translate(calc(-9.5vw - 25%), -15vh)";
             btns[1].style.scale = "2";
             btns[1].style.backgroundPosition = "right";
+            btns[1].style.borderBottom = "none";
             // Display Section
             differentSection.style.display = "block";
             break;
@@ -90,6 +92,7 @@ function buttonClick(btnNum) {
             btns[2].style.transform = "translate(calc(10vw + 25%), -25vh)";
             btns[2].style.scale = "2";
             btns[2].style.backgroundPosition = "left";
+            btns[2].style.borderBottom = "none";
             // Display Section
             tryItSection.style.display = "block";
             break;
@@ -110,6 +113,7 @@ function buttonClick(btnNum) {
             btns[3].style.transform = "translate(calc(-10vw - 25%), -30vh)";
             btns[3].style.scale = "2";
             btns[3].style.backgroundPosition = "right";
+            btns[3].style.borderBottom = "none";
             // Display Section
             qualitySection.style.display = "block";
             break;
@@ -150,13 +154,14 @@ function goBack() {
     tryItSection.style.display = "none";
     qualitySection.style.display = "none";
     // return all buttons
-    btns[0].style.backgroundPosition = "right";
-    btns[1].style.backgroundPosition = "left";
-    btns[2].style.backgroundPosition = "right";
-    btns[3].style.backgroundPosition = "left";
+    btns[0].style.backgroundPosition = "left";
+    btns[1].style.backgroundPosition = "right";
+    btns[2].style.backgroundPosition = "left";
+    btns[3].style.backgroundPosition = "right";
     btns.forEach(btn => {
         btn.style.transform = "translate(0%, -50%)";
         btn.style.scale = "1";
+        btn.style.borderBottom = "2px solid white";
         setTimeout(showElement, 1000, btn)
     })
 

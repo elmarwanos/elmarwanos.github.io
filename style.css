@@ -143,11 +143,12 @@ li {
     -moz-transition: background-position 200ms ease, transform 1s ease, scale 1s ease, opacity 300ms ease;
     -ms-transition: background-position 200ms ease, transform 1s ease, scale 1s ease, opacity 300ms ease;
     -o-transition: background-position 200ms ease, transform 1s ease, scale 1s ease, opacity 300ms ease;
+    border-bottom: 2px solid white;
 }
 
 .buttons:hover {
     cursor: pointer;
-    background-position: left;
+    background-position: left !important;
 }
 
 .buttons:nth-of-type(4),
@@ -162,7 +163,7 @@ li {
 
 .buttons:nth-of-type(4):hover,
 .buttons:nth-of-type(2):hover {
-    background-position: right;
+    background-position: right !important;
 }
 
 #language-switch {
@@ -206,7 +207,7 @@ li {
 /* ---------------------------------------------------------------------------------- */
 #competition-btn {
     top: calc(50% - 21%);
-    right: calc(50% + 21%);
+    right: calc(50% + 22%);
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -226,7 +227,7 @@ li {
 /*  */
 #different-btn {
     top: calc(50% - 10%);
-    left: calc(50% + 19%);
+    left: calc(50% + 20%);
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
