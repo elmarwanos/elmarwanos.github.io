@@ -246,7 +246,7 @@ li {
 
 /*  */
 #try-it-btn {
-    top: calc(50% + 10%);
+    top: calc(50%);
     right: calc(50% + 20%);
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -260,7 +260,7 @@ li {
     max-width: 200px;
     height: auto;
     position: absolute;
-    top: calc(50% + 10%);
+    top: calc(50%);
     right: 54%;
 }
 

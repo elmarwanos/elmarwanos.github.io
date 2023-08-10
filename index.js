@@ -79,10 +79,10 @@ function buttonClick(btnNum) {
         case 3: //Try It Section
             // Scale Video
             bkgBack.style.filter = "blur(3px) brightness(0.6)";
-            bkgBack.style.transformOrigin = "left center";
+            bkgBack.style.transformOrigin = "0% 60%";
             bkgBack.style.transform = "scale(1.8)";
             bkgFront.style.filter = "blur(3px) brightness(0.6)";
-            bkgFront.style.transformOrigin = "left center";
+            bkgFront.style.transformOrigin = "0% 60%";
             bkgFront.style.transform = "scale(1.8)";
             // Hide Buttons
             btns[0].style.opacity = 0;
