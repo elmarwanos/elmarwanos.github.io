@@ -3,6 +3,11 @@
     src: url(fonts/DIN_Next_LT_Arabic_Regular.ttf);
 }
 
+h1,h2,h3,h4,h5,h6,p,li,a,.hidden-sections{
+    direction: rtl;
+    text-align: right;
+}
+
 body {
     font-family: Lubalin;
 }

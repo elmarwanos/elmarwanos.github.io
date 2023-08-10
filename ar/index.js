@@ -58,10 +58,10 @@ function buttonClick(btnNum) {
         case 2: //Different Section
             // Scale Video
             bkgBack.style.filter = "blur(3px) brightness(0.6)";
-            bkgBack.style.transformOrigin = "100% 50%";
+            bkgBack.style.transformOrigin = "start center";
             bkgBack.style.transform = "scale(1.8)";
             bkgFront.style.filter = "blur(3px) brightness(0.6)";
-            bkgFront.style.transformOrigin = "100% 50%";
+            bkgFront.style.transformOrigin = "start center";
             bkgFront.style.transform = "scale(1.8)";
             // Hide Buttons
             btns[0].style.opacity = 0;
@@ -79,10 +79,10 @@ function buttonClick(btnNum) {
         case 3: //Try It Section
             // Scale Video
             bkgBack.style.filter = "blur(3px) brightness(0.6)";
-            bkgBack.style.transformOrigin = "left center";
+            bkgBack.style.transformOrigin = "100% 50%";
             bkgBack.style.transform = "scale(1.8)";
             bkgFront.style.filter = "blur(3px) brightness(0.6)";
-            bkgFront.style.transformOrigin = "left center";
+            bkgFront.style.transformOrigin = "100% 50%";
             bkgFront.style.transform = "scale(1.8)";
             // Hide Buttons
             btns[0].style.opacity = 0;
@@ -100,10 +100,10 @@ function buttonClick(btnNum) {
         case 4: //Quality Section
             // Scale Video
             bkgBack.style.filter = "blur(3px) brightness(0.6)";
-            bkgBack.style.transformOrigin = "100% 80%";
+            bkgBack.style.transformOrigin = "100% 50%";
             bkgBack.style.transform = "scale(1.8)";
             bkgFront.style.filter = "blur(3px) brightness(0.6)";
-            bkgFront.style.transformOrigin = "100% 80%";
+            bkgFront.style.transformOrigin = "100% 50%";
             bkgFront.style.transform = "scale(1.8)";
             // Hide Buttons
             btns[0].style.opacity = 0;
