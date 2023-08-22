@@ -27,8 +27,13 @@ p,li {
 }
 
 .hidden-sections {
-    margin: 80px auto 0 auto;
+    margin: 0px auto 0 auto;
     /* font-size: clamp(1.5rem, 2.5vw, 3rem); */
+}
+
+#quality-section {
+    position: absolute;
+    width: 80%;
 }
 
 .hidden-sections button {
