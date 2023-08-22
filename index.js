@@ -1,3 +1,10 @@
+/*
+Competition: NAN
+Different : 0
+Try it: 1
+Quality: 2
+*/
+
 // Declare Variables
 var bkgBack;
 var bkgFront;
@@ -32,30 +39,32 @@ function buttonClick(btnNum) {
     mainScreenElements.forEach(outOfZoom => {
         outOfZoom.style.opacity = 0;
     })
+    
+    console.log(btnNum)
 
     switch (btnNum) {
-        case 1: //Competition Section
-            // Scale Video
-            bkgBack.style.filter = "blur(3px) brightness(0.6)";
-            bkgBack.style.transformOrigin = "0% 30%";
-            bkgBack.style.transform = "scale(1.8)";
-            bkgFront.style.filter = "blur(3px) brightness(0.6)";
-            bkgFront.style.transformOrigin = "0% 30%";
-            bkgFront.style.transform = "scale(1.8)";
-            // Hide Buttons
-            btns[1].style.opacity = 0;
-            btns[2].style.opacity = 0;
-            btns[3].style.opacity = 0;
-            // Move Selected Button
-            btns[0].style.transform = "translate(calc(10.5vw + 25%), -10.5vh)";
-            btns[0].style.scale = "2";
-            btns[0].style.backgroundPosition = "left";
-            btns[0].style.borderBottom = "none";
-            // Display Section
-            competitionSection.style.display = "block";
-            break;
+        // case 1: //Competition Section
+        //     // Scale Video
+        //     bkgBack.style.filter = "blur(3px) brightness(0.6)";
+        //     bkgBack.style.transformOrigin = "0% 30%";
+        //     bkgBack.style.transform = "scale(1.8)";
+        //     bkgFront.style.filter = "blur(3px) brightness(0.6)";
+        //     bkgFront.style.transformOrigin = "0% 30%";
+        //     bkgFront.style.transform = "scale(1.8)";
+        //     // Hide Buttons
+        //     btns[1].style.opacity = 0;
+        //     btns[2].style.opacity = 0;
+        //     btns[3].style.opacity = 0;
+        //     // Move Selected Button
+        //     btns[0].style.transform = "translate(calc(10.5vw + 25%), -10.5vh)";
+        //     btns[0].style.scale = "2";
+        //     btns[0].style.backgroundPosition = "left";
+        //     btns[0].style.borderBottom = "none";
+        //     // Display Section
+        //     competitionSection.style.display = "block";
+        //     break;
 
-        case 2: //Different Section
+        case 0: //Different Section
             // Scale Video
             bkgBack.style.filter = "blur(3px) brightness(0.6)";
             bkgBack.style.transformOrigin = "100% 50%";
@@ -64,19 +73,18 @@ function buttonClick(btnNum) {
             bkgFront.style.transformOrigin = "100% 50%";
             bkgFront.style.transform = "scale(1.8)";
             // Hide Buttons
-            btns[0].style.opacity = 0;
+            btns[1].style.opacity = 0;
             btns[2].style.opacity = 0;
-            btns[3].style.opacity = 0;
             // Move Selected Button
-            btns[1].style.transform = "translate(calc(-9.5vw - 25%), -15vh)";
-            btns[1].style.scale = "2";
-            btns[1].style.backgroundPosition = "right";
-            btns[1].style.borderBottom = "none";
+            btns[0].style.transform = "translate(calc(-9.5vw - 25%), -15vh)";
+            btns[0].style.scale = "2";
+            btns[0].style.backgroundPosition = "right";
+            btns[0].style.borderBottom = "none";
             // Display Section
             differentSection.style.display = "block";
             break;
 
-        case 3: //Try It Section
+        case 1: //Try It Section
             // Scale Video
             bkgBack.style.filter = "blur(3px) brightness(0.6)";
             bkgBack.style.transformOrigin = "0% 60%";
@@ -86,18 +94,17 @@ function buttonClick(btnNum) {
             bkgFront.style.transform = "scale(1.8)";
             // Hide Buttons
             btns[0].style.opacity = 0;
-            btns[1].style.opacity = 0;
-            btns[3].style.opacity = 0;
+            btns[2].style.opacity = 0;
             // Move Selected Button
-            btns[2].style.transform = "translate(calc(10vw + 25%), -25vh)";
-            btns[2].style.scale = "2";
-            btns[2].style.backgroundPosition = "left";
-            btns[2].style.borderBottom = "none";
+            btns[1].style.transform = "translate(calc(10vw + 25%), -20vh)";
+            btns[1].style.scale = "2";
+            btns[1].style.backgroundPosition = "left";
+            btns[1].style.borderBottom = "none";
             // Display Section
             tryItSection.style.display = "block";
             break;
 
-        case 4: //Quality Section
+        case 2: //Quality Section
             // Scale Video
             bkgBack.style.filter = "blur(3px) brightness(0.6)";
             bkgBack.style.transformOrigin = "100% 80%";
@@ -108,12 +115,11 @@ function buttonClick(btnNum) {
             // Hide Buttons
             btns[0].style.opacity = 0;
             btns[1].style.opacity = 0;
-            btns[2].style.opacity = 0;
             // Move Selected Button
-            btns[3].style.transform = "translate(calc(-10vw - 25%), -30vh)";
-            btns[3].style.scale = "2";
-            btns[3].style.backgroundPosition = "right";
-            btns[3].style.borderBottom = "none";
+            btns[2].style.transform = "translate(calc(-10vw - 25%), -30vh)";
+            btns[2].style.scale = "2";
+            btns[2].style.backgroundPosition = "right";
+            btns[2].style.borderBottom = "none";
             // Display Section
             qualitySection.style.display = "block";
             break;
@@ -149,7 +155,7 @@ function goBack() {
     bkgFront.style.transform = "scale(1)";
     bkgFront.style.zIndex = "0";
     // Hide hidden sections
-    competitionSection.style.display = "none";
+    // competitionSection.style.display = "none";
     differentSection.style.display = "none";
     tryItSection.style.display = "none";
     qualitySection.style.display = "none";
@@ -157,7 +163,7 @@ function goBack() {
     btns[0].style.backgroundPosition = "left";
     btns[1].style.backgroundPosition = "right";
     btns[2].style.backgroundPosition = "left";
-    btns[3].style.backgroundPosition = "right";
+    // btns[3].style.backgroundPosition = "right";
     btns.forEach(btn => {
         btn.style.transform = "translate(0%, -50%)";
         btn.style.scale = "1";

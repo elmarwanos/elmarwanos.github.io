@@ -18,7 +18,7 @@ p,li {
 
 #title {
     /* font-size: clamp(3.5rem, 7vw, 7rem); */
-    padding: 5vmin 0 0 0;
+    padding: 13vh 0 0 0;
 }
 
 .buttons {
@@ -33,10 +33,4 @@ p,li {
 
 .hidden-sections button {
     /* font-size: clamp(1rem, 2.5vw, 3rem); */
-}
-
-@media only screen and (max-width: 1000px) {
-    #title {
-        padding: 10vh 0 0 0;
-    }
 }
