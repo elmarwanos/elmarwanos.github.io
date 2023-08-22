@@ -93,6 +93,8 @@ function buttonClick(btnNum) {
             btns[1].style.borderBottom = "none";
             // Display Section
             tryItSection.style.display = "block";
+            // SPECIAL NOTE switching the `dir` of the site is necessary to stop body movement
+            document.body.dir = "rtl";
             break;
 
         case 2: //Quality Section
@@ -164,4 +166,7 @@ function goBack() {
 
     // Hide Back button
     back.style.display = "none";
+
+    // Return body to ltr
+    document.body.dir = "ltr";
 }
