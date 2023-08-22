@@ -291,6 +291,10 @@ li {
     width: 80%;
 }
 
+#try-it-section {
+    text-align: left;
+}
+
 .hidden-sections {
     display: none;
     font-size: clamp(1rem, 2vw, 2rem);

@@ -39,3 +39,7 @@ p,li {
 .hidden-sections button {
     /* font-size: clamp(1rem, 2.5vw, 3rem); */
 }
+
+#try-it-section {
+    text-align: right;
+}
