@@ -31,11 +31,6 @@ p,li {
     /* font-size: clamp(1.5rem, 2.5vw, 3rem); */
 }
 
-#quality-section {
-    position: absolute;
-    width: 80%;
-}
-
 #quality-section ul {
     padding: 0 40px 0 0;
 }
