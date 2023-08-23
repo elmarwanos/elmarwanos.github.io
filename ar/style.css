@@ -18,16 +18,15 @@ p,li {
 
 #title {
     /* font-size: clamp(3.5rem, 7vw, 7rem); */
-    padding: 13vh 0 0 0;
 }
 
 .buttons {
-    font-size: clamp(1.5rem, 2.8vw, 3rem);
+    font-size: clamp(1rem, 3vmin, 4vmin);
     margin-top: -8px;
 }
 
 .hidden-sections {
-    margin: 2vw auto 0 auto;
+    margin: 20vmin auto 0 auto;
     /* font-size: clamp(1.5rem, 2.5vw, 3rem); */
 }
 

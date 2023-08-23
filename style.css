@@ -93,7 +93,8 @@ li {
 }
 
 #title {
-    padding: 10vh 0 0 0;
+    padding: 0;
+    padding-top: clamp(0, 10vh, 50px);
     margin: 0 auto;
     width: 100%;
     font-size: clamp(2rem, 5vw, 4rem);
@@ -137,7 +138,7 @@ li {
     margin: 0 auto;
     font-family: inherit;
     position: absolute;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1rem, 2vw, 3vmin);
     transition: background-position 200ms ease, transform 1s ease, scale 1s ease, opacity 300ms ease;
     -webkit-transition: background-position 200ms ease, transform 1s ease, scale 1s ease, opacity 300ms ease;
     -moz-transition: background-position 200ms ease, transform 1s ease, scale 1s ease, opacity 300ms ease;
@@ -297,8 +298,8 @@ li {
 
 .hidden-sections {
     display: none;
-    font-size: clamp(1rem, 2vw, 2rem);
-    margin: 20px auto 0 auto;
+    font-size: clamp(1rem, 2vw, 5vmin);
+    margin: 8vh auto 0 auto;
     width: 60%;
     max-width: 950px;
     height: 100%;
