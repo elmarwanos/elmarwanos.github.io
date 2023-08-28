@@ -12,14 +12,6 @@ body {
     font-family: Lubalin;
 }
 
-p,li {
-    /* font-size: clamp(2.5rem, 5vw, 5rem); */
-}
-
-#title {
-    /* font-size: clamp(3.5rem, 7vw, 7rem); */
-}
-
 .buttons {
     font-size: clamp(1rem, 3vmin, 4vmin);
     margin-top: -8px;
@@ -27,16 +19,12 @@ p,li {
 
 .hidden-sections {
     margin: 20vmin auto 0 auto;
-    /* font-size: clamp(1.5rem, 2.5vw, 3rem); */
 }
 
 #quality-section ul {
     padding: 0 40px 0 0;
 }
 
-.hidden-sections button {
-    /* font-size: clamp(1rem, 2.5vw, 3rem); */
-}
 
 #try-it-section {
     text-align: right;
