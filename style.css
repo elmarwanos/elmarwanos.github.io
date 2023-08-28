@@ -520,7 +520,7 @@ li {
 /* ---------------------------------------------------------------------------------- */
 @media only screen and (max-width: 1000px) {
     #title{
-        padding-top: 3vh;
+        padding-top: 5vh;
     }
 
     #logo {
